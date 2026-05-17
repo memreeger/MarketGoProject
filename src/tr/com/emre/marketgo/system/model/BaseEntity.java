@@ -17,6 +17,11 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 public abstract class BaseEntity {
 
+    private Long id;
+    private LocalDateTime createdAt;
+    private LocalDateTime updatedAt;
+    private boolean isActive = true;
+
     // TODO: id alanını tanımla (Long)
     // TODO: createdAt alanını tanımla (LocalDateTime)
     // TODO: updatedAt alanını tanımla (LocalDateTime)

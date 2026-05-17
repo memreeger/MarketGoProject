@@ -9,6 +9,13 @@ import lombok.Setter;
 @NoArgsConstructor
 public class Address extends BaseEntity {
 
+    private long customerId;
+    private String adressTitle;
+    private String fullAdress;
+    private String city;
+    private String district;
+    private boolean isDefault;
+
     // TODO: customerId (Long) — adresin sahibi olan müşterinin ID'si
     // TODO: title (String) — örn: "Ev", "İş"
     // TODO: fullAddress (String) — tam adres metni

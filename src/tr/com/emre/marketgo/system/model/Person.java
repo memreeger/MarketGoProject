@@ -3,6 +3,7 @@
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
+import tr.com.emre.marketgo.system.enums.PersonType;
 
 /**
  * Person hiyerarşisinin soyut atası.
@@ -12,6 +13,21 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public abstract class Person extends BaseEntity {
+
+    private String firstName;
+    private String lastName;
+    private String email;
+    private String phone;
+    private PersonType personType;
+
+    public String getFullName() {
+        return firstName + " " + lastName;
+    }
+
+    public String getDashboardTitle() {
+        return "müşteri paneli : ";
+    }
+
 
     // TODO: firstName, lastName, email, phone alanlarını tanımla
     // TODO: passwordHash alanını tanımla
