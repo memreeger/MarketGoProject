@@ -1,0 +1,21 @@
+﻿# Compiled
+out/
+*.class
+*.jar
+!lib/*.jar
+
+# IntelliJ
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Environment
+.env
